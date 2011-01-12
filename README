@@ -1,0 +1,8 @@
+Sample application with basic javascript functionalities:
+
+Plan to use different branches to show different approaches.
+
+Installing:
+    bundle install
+    rake db:setup
+

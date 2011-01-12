@@ -1,0 +1,20 @@
+<h1>Listing products</h1>
+
+<% form_tag products_path, :method => :get, :remote => true, :id => "search_product" do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+
+<div id="products">
+  <%= render @products %>
+</div>
+
+<br />
+
+<p>
+  Total Price: <span id="total_price"><%= number_to_currency @products.inject(0) {|sum, project| sum += project.price} -%></span>
+</p>
+
+<%= link_to 'New Product', new_product_path %>

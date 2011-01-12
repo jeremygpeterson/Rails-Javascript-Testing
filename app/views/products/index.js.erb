@@ -1,0 +1,15 @@
+$("#products").html("<%= escape_javascript(render(@products)) %>");
+
+//$("#total_price").html("<%= number_to_currency @products.inject(0) {|sum, project| sum += project.price} -%>");
+
+//*
+
+  // Long way
+  var price = 0;
+  $("#products span.price").each(function () {
+    //console.log($(this).text());
+    price += $(this).text().replace("$", '') * 1;
+  });
+  $("#total_price").html("$" + price.toFixed(2));
+
+//*/
