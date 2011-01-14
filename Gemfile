@@ -37,5 +37,6 @@ group(:test) do
   gem 'cucumber'
   gem 'cucumber-rails'
   gem 'capybara'
+  gem 'database_cleaner'
   gem 'launchy'
 end

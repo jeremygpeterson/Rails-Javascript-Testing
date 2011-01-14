@@ -5,7 +5,8 @@ Feature: Test Products Views (search and dom changes)
 
   @search
   Scenario: Searching Projects and total price changes
-    Given I am on the products page
+    Given I have products
+    When I am on the products page
     Then products count equals "4"
         And I should see "$79.96" within "#total_price"
 
