@@ -30,3 +30,12 @@ gem 'ruby-debug'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+# recommended link on setup
+# http://openmonkey.com/articles/2010/04/javascript-testing-with-cucumber-capybara
+group(:test) do
+  gem 'cucumber'
+  gem 'cucumber-rails'
+  gem 'capybara'
+  gem 'launchy'
+end
