@@ -38,4 +38,6 @@ group(:test) do
   gem 'cucumber-rails'
   gem 'capybara'
   gem 'launchy'
+
+  gem 'capybara-envjs'
 end
