@@ -2,7 +2,7 @@ function shorten(text) {
     var array = text.split(" ");
 
     if (array.length > 15) {
-        text = array.splice(0, 14).join(" ") + "...";
+        text = array.splice(0, 15).join(" ") + "...";
     }
     return text;
 }
