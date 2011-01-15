@@ -3,6 +3,7 @@ Feature: Test Products Views (search and dom changes)
   As developers
   I want to test views
 
+  @search
   Scenario: Searching Projects and total price changes
     Given I have products
         And I am on the products page
