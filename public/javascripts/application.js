@@ -16,11 +16,11 @@ function short_description() {
         if (text !== short_text) {
             description.html(short_text);
         }
-    })
+    });
 }
 
 $(function () {
     short_description();
     $("#products").bind("DOMSubtreeModified", short_description);// dom update listener hack
-})
+});
 

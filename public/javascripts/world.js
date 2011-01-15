@@ -1,9 +1,9 @@
 var world = {
   hello: function () {
-    return "Hello World"
+    return "Hello World";
   },
   goodbye: function () {
-    return "Good Bye World"
+    return "Good Bye World";
   }
 };
 
