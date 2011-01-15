@@ -1,5 +1,6 @@
 function shorten(text) {
     var array = text.split(" ");
+    debug.log("shorten() called.");
 
     if (array.length > 15) {
         text = array.splice(0, 15).join(" ") + "...";

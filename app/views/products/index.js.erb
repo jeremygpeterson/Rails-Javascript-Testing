@@ -1,9 +1,10 @@
+debug.info("index.js.erb called");
 $("#products").html("<%= escape_javascript(render(@products)) %>");
 
 //$("#total_price").html("<%= number_to_currency @products.inject(0) {|sum, project| sum += project.price} -%>");
 
 //*
-
+  debug.log("Calculating Total Price");
   // Long way
   var price = 0;
   $("#products span.price").each(function () {

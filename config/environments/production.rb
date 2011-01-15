@@ -1,3 +1,6 @@
+# jQuery Debug level
+JQUERY_DEBUG = false
+
 RailsJavascriptTesting::Application.configure do
   # Settings specified here will take precedence over those in config/environment.rb
 
