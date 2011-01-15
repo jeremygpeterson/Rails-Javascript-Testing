@@ -3,6 +3,7 @@ Feature: Test various javascript methods
   As developers
   I want the methods to return correctly
 
+  @hello
   Scenario: World Script says hello
     Given I am on the products page
     Then I test hello world
