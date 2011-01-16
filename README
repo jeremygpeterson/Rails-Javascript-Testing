@@ -1,8 +1,41 @@
-Sample application with basic javascript functionalities:
+= Rails JavaScript Testing
 
-Plan to use different branches to show different approaches.
+Sample application with basic JavaScript testing strategies in each branch.  The branches of this repository represent the following:
 
-Installing:
+* master: Base Rails 3 application branch without any testing framework
+* javascript-debug: Ben Alman's ba-debug for javascript logging.  (Alternative to alert statements.)
+* cucumber-capybara: Cucumber: using Capybara and Selenium web driver
+* cucumber-capybara-envjs: Cuucmber using Capybara and envjs
+* jslint: Code quality tool for JavaScript
+
+== Downloading Master Application
+
+Clone the repository, install gems, and setup development/test database.
+    git clone git@github.com:jeremygpeterson/Rails-Javascript-Testing.git
+    cd Rails-Javascript-Testing
     bundle install
     rake db:setup
 
+== Switching to a Different Test Strategy
+
+Viewing all branches
+    git branch -a
+
+Checkout a New Test Strategy
+    git checkout cucumber-capybara-envjs
+    bundle install
+
+For more information on using the test, check "README" file for more information.
+
+== Application Goals
+
+Basic Store application listing products:
+* Lists product category, name, price, and short description.
+* Search results via ajax
+* Update price field (DOM changes)
+
+== To Do
+* Add more realistic JavaScript functions to main application.
+* Create test for a page that takes a long time loading page (handling short timeouts)
+* Add watir test branch
+* Add Jasmine test branch
