@@ -1,0 +1,38 @@
+= Rails JavaScript Testing
+= cucumber-capybara-envjs: Cucumber using Capybara and envjs
+
+Capybara, using envjs, a replacement of webrat and helps when running integrated tests.
+
+== Usage
+    cucumber
+
+== Directories and Files of Intrest
+    Root
+      |-- features
+        |-- step_definitions
+          |-- javascript_methods_steps.rb
+          |-- products_view_steps.rb
+        |-- support
+          |-- env.rb
+          |-- start_up.rb
+        |-- javascript_methods.feature
+        |-- products_view.feature
+
+== Recomended Documentation
+
+More information on using the envjs driver in Capybara.
+
+    https://github.com/smparkes/capybara-envjs
+
+The best documentation for capybara is in the README file in the projects repository.
+
+    https://github.com/jnicklas/capybara
+
+== Switching to a Different Test Strategy
+
+Viewing all branches
+    git branch -a
+
+Checkout a New Test Strategy
+    git checkout cucumber-capybara-envjs
+    bundle install
