@@ -1,0 +1,38 @@
+= Rails JavaScript Testing
+= javascript-debug: Ben Alman’s ba-debug for javascript logging. (Alternative to alert statements.)
+
+During development, logging messages to the browser is helpful.  Ben Alman's ba-debug.js
+script is a cross browser solution to log javascript messages.  This is a good way to
+enhance javascript development and keeps debug logs from production app.
+
+== Usage
+    Start rails using the development environment.
+    From firebug console, browser console, or firebug light to view logs.
+
+== Directories and Files of Intrest
+    Root
+    -- config
+     |-- development.rb
+     |-- production.rb
+    -- app
+       |-- views
+          |-- layouts
+            |-- application.html.erb
+    -- public
+       |-- javascripts
+          |-- application.js
+          |-- ba-debug.js
+          |-- world.js
+
+== Recomended Documentation
+
+    http://benalman.com/projects/javascript-debug-console-log/
+
+== Switching to a Different Test Strategy
+
+Viewing all branches
+    git branch -a
+
+Checkout a New Test Strategy
+    git checkout cucumber-capybara-envjs
+    bundle install
