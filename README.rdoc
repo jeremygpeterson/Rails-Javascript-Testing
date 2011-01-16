@@ -1,0 +1,27 @@
+= Rails JavaScript Testing
+= jslint: Code quality tool for JavaScript
+
+Warning, JSLint will hurt your feelings!
+
+JSLint is a JavaScript program that looks for problems in JavaScript programs. It is a code quality tool.
+
+== Usage
+    rake jslint
+
+== Directories and Files of Intrest
+    Root
+      |-- config
+        |-- jslint.yml
+
+== Recomended Documentation
+
+    https://github.com/psionides/jslint_on_rails
+
+== Switching to a Different Test Strategy
+
+Viewing all branches
+    git branch -a
+
+Checkout a New Test Strategy
+    git checkout cucumber-capybara-envjs
+    bundle install
