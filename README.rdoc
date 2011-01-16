@@ -5,7 +5,7 @@ Sample application with basic JavaScript testing strategies in each branch.  The
 * master: Base Rails 3 application branch without any testing framework
 * javascript-debug: Ben Alman's ba-debug for javascript logging.  (Alternative to alert statements.)
 * cucumber-capybara: Cucumber: using Capybara and Selenium web driver
-* cucumber-capybara-envjs: Cuucmber using Capybara and envjs
+* cucumber-capybara-envjs: Cucumber using Capybara and envjs
 * jslint: Code quality tool for JavaScript
 
 == Downloading Master Application
